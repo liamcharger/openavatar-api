@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import List, Optional
 
 class UserCreate(BaseModel):
-    uid: str
+    id: str
     firstname: Optional[str] = None
     lastname: Optional[str] = None
     email: str
@@ -19,7 +19,6 @@ class UserCreate(BaseModel):
 
 class UserOut(BaseModel):
     id: str
-    uid: str
     firstname: Optional[str]
     lastname: Optional[str]
     email: str
