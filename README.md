@@ -1,6 +1,6 @@
 # Openavatar API
 
-The **Openavatar API** is the backend for the [Openavatar iOS app](https://github.com/liamcharger/openavatar-ios). It provides user management features powered by PostgreSQL, with more endpoints and features in development.
+The **Openavatar API** is an experimental backend for the [Openavatar iOS app](https://github.com/liamcharger/openavatar-ios). It provides user management features powered by PostgreSQL, with more endpoints and features in development.
 
 ## Documentation
 
