@@ -19,6 +19,14 @@ def get_user(user_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
 
+# TODO: expect a hashed email
+@router.get("/{email}", response_model=UserOut)
+def get_user(email: str, db: Session = Depends(get_db)):
+    db_user = db.query(User).filter(User.email == email).first()
+    if db_user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+    return db_user
+
 @router.post("/create", response_model=UserOut)
 def create_user(user: UserCreate, db: Session = Depends(get_db)):
     db_user = User(
