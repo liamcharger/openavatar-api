@@ -8,6 +8,7 @@ class User(Base):
     firstname = Column(String, nullable=True)
     lastname = Column(String, nullable=True)
     email = Column(String, unique=True, nullable=False)
+    email_hashed = Column(String, unique=True, nullable=False)
     nickname = Column(String, nullable=False)
     pronunciation = Column(String, nullable=True)
     bio = Column(String, nullable=True)
