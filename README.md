@@ -57,7 +57,7 @@ The server will start at `http://127.0.0.1:8000`.
 
 ### Users (`/users`)
 - **GET**: Retrieve a list of all users.
-- **GET**: Retrieve a specific user by ID at `/users/{userId}`.
-- **GET**: Retrieve a specific user by email at `/users/{email}`.
+- **GET**: Retrieve a specific user by email at `/users/{hashedEmail}`.
 - **POST**: Create a new user at `/users/create`.
+- **POST**: Upload a profile image at `/users/{userId}/avatar`.
 - **DELETE**: Delete a user by ID at `/users/{userId}`.
